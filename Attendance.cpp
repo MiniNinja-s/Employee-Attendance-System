@@ -100,7 +100,7 @@ void Attendance::dailyReport() {
         if (d == date && out != "-") {
             int start = timeToMinutes(in);
             int end = timeToMinutes(out);
-            int hours = (end - start) / 60;
+            int hours = ((end - start) / 60) * -1;
 
             cout << "Name: " << n
                  << " | Hours Worked: " << hours << endl;
