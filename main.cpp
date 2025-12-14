@@ -31,7 +31,7 @@ int main() {
             system.dailyReport();
             break;
         case 5:
-            cout << "Goodbye!\n";
+            cout << "As-salamu alaykum!\n";
             break;
         default:
             cout << "Invalid choice!\n";
