@@ -1,1 +1,1 @@
-Just run the result.exe file
+Just run the main.exe file
