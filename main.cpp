@@ -14,7 +14,7 @@ int main() {
         cout << "3. Find Employee\n";
         cout << "4. View Daily Report\n";
         cout << "5. Quit\n";
-        cout << "Choice: ";
+        cout << "Enter your choice: ";
         cin >> choice;
 
         switch (choice) {
