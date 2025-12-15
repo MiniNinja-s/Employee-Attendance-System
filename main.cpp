@@ -8,12 +8,12 @@ int main() {
     int choice;
 
     do {
-        cout << "\n--- Attendance System ---\n";
-        cout << "1. Check-In\n";
-        cout << "2. Check-Out\n";
-        cout << "3. Search Employee\n";
-        cout << "4. Daily Report\n";
-        cout << "5. Exit\n";
+        cout << "\n--- Attendance Control System ---\n";
+        cout << "1. Mark Attendance\n";
+        cout << "2. Mark Departure\n";
+        cout << "3. Find Employee\n";
+        cout << "4. View Daily Report\n";
+        cout << "5. Quit\n";
         cout << "Choice: ";
         cin >> choice;
 
