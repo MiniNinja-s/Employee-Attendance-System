@@ -4,7 +4,6 @@
 
 using namespace std;
 
-// تحويل الوقت لدقائق
 int Attendance::timeToMinutes(string t) {
     int h = stoi(t.substr(0, 2));
     int m = stoi(t.substr(3, 2));
@@ -100,7 +99,10 @@ void Attendance::dailyReport() {
         if (d == date && out != "-") {
             int start = timeToMinutes(in);
             int end = timeToMinutes(out);
-            int hours = ((end - start) / 60) * -1;
+            int hours = ((end - start) / 60);
+            if(hours < 0){
+                hours *= -1;
+            }
 
             cout << "Name: " << n
                  << " | Hours Worked: " << hours << endl;
