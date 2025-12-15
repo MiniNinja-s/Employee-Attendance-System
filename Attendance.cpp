@@ -21,13 +21,13 @@ void Attendance::checkIn() {
     cin >> name;
     cout << "Date (YYYY-MM-DD): ";
     cin >> date;
-    cout << "Check-In Time (HH:MM): ";
+    cout << "Attendance Time (HH:MM): ";
     cin >> timeIn;
 
     file << name << " " << date << " " << timeIn << " -" << endl;
     file.close();
 
-    cout << "Check-In saved successfully.\n";
+    cout << "Attendance saved successfully.\n";
 }
 
 // Check-Out (Merge Technique)
@@ -40,7 +40,7 @@ void Attendance::checkOut() {
     cin >> name;
     cout << "Date (YYYY-MM-DD): ";
     cin >> date;
-    cout << "Check-Out Time (HH:MM): ";
+    cout << "Departure Time (HH:MM): ";
     cin >> timeOut;
 
     string n, d, in, out;
@@ -59,7 +59,7 @@ void Attendance::checkOut() {
     remove("attendance.txt");
     rename("temp.txt", "attendance.txt");
 
-    cout << "Check-Out updated successfully.\n";
+    cout << "Departure updated successfully.\n";
 }
 
 // Search
